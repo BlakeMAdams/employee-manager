@@ -11,16 +11,16 @@ export default class Employee {
 
 
   // updateName
-  updateName(str) {
-    this.prop.name = str;
+  updateName(name) {
+    this.name = name;
   }
 
   // updatePhone
-  updatePhone(str) {
-    this.prop.name = str;
+  updatePhone(phone) {
+    this.phone = phone;
   }
   // updateTitle
-  updateTitle(str) {
-    this.prop.name = str;
+  updateTitle(title) {
+    this.title = title;
   }
 }

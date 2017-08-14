@@ -23,12 +23,11 @@ class EmployeeEditor extends Component {
 
   // handleChange
   handleChange(prop, val){
-    if(this.state.notModified){
-      this.setState({
+    if(this.state.notModified){ this.setState({
         notModified:false
       })
     }
-    employeeCopy = Object.assign({}, this.state.employee);
+    var employeeCopy = Object.assign({}, this.state.employee);
     employeeCopy[prop] = val;
     this.setState({
       employee: employeeCopy
